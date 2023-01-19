@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.body {
+    height: 650px;
+    width: 1000px;
+    background-color: #E3E3CC55;
+    border-radius: 20px;
+    display: flex;
+}
+
+.sidbar {
+    width: 250px;
+    height: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+
+.search {
+    position: relative;
+}
+
+.search img {
+    width: 12px;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+}
+
+.search input {
+    background-color: #E3E3CC55;
+    padding: 2px 2px 2px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.search input :focus {
+    outline-color: #E3E3CC;
+}
+
+.weather {
+    width: 70%;
+    height: min-content;
+}
+
+.weather img {
+    width: 150px;
+}
+
+.degre {
+    width: 70%;
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid rgb(189, 189, 189);
+}
+
+.degre h1 {
+    font-size: 90px;
+    font-weight: 50;
+    text-transform: lowercase;
+}
+
+.degre h1 span {
+    font-size: 0.5em;
+    position: relative;
+    bottom: 30px;
+}
+
+.status {
+    width: 70%;
+}
+
+.status p {
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.place {
+    position: relative;
+}
+
+.place img {
+    height: 75px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.place h3 {
+    font-weight: 200;
+    color: #fff;
+    position: absolute;
+    top: 32%;
+    left: 32%;
+}
+
+.right-side {
+    width: calc(3*100%/4);
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav div a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-nav div span {
+    background-color: #fff;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.week-boxes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: calc(100%/75);
+    /*padding: 0 40px;*/
+}
+
+.day-box {
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day-box img {
+    width: 30px;
+}
+
+.weather-conditions {
+    padding: 20px 0;
+}
+
+.weather-conditions h3 {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.todays-boxes {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.todays-box {
+    height: 180px;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: space-between;
+    position: relative;
+}
+
+.header-box {
+    color: #E3E3CC;
+    font-size: 1em;
+}
+
+.uv-index .half-circle {
+    width: 170px;
+    height: 170px;
+    border: 10px;
+    border-style: solid;
+    border-color: rgb(189, 189, 189);
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 65px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+
+/*.uv-index div div{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 10px;
+    border-style: solid;
+    border-color: #ff1;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(0deg);
+}*/
+
+.uv-index div span {
+    font-size: 50px;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(45deg);
+}
