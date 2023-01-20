@@ -7,17 +7,12 @@ const getTodayData = new Today({ q: "chlef" });
 
 getTodayData.formatData().then(res => {
   todayData = res;
-
+  console.log(todayData);
   const forecastData = new Forecast(getTodayData.placeId);
 
   forecastData.FormatData().then(res => {
     foreCastDataList = res;
-
-    console.log(todayData);
-    console.log(foreCastDataList);
-
     // render
-
     // render today weather
     const todayWeather = document.querySelector("#degre_number");
     todayWeather.innerHTML = Math.floor(todayData.temp);
@@ -30,7 +25,6 @@ getTodayData.formatData().then(res => {
       (today.getMonth() + 1) +
       "-" +
       today.getDate();
-    console.log(date);
     todayDate.innerHTML = date;
     // render status
     const status_details = document.getElementById("status_details");
@@ -56,13 +50,15 @@ getTodayData.formatData().then(res => {
     // render Forecast
     let weakBoxe = document.querySelector(".week-boxes");
     foreCastDataList.forEach(e => {
+      let iconurl = "http://openweathermap.org/img/w/" + e.icon + ".png";
       let box = ` <div class="day-box">
       <p>${e.date}</p>
-      <img src="weather-condition/sunny.png" alt="">
+      <img src="${iconurl}" alt="">
+      <div class="temps">
       <div>${e.feels_like}<span>°</span></div>
-      <div>${e.temp_max}<span>°</span></div>
+      <div class="temp-max">${e.temp_max}<span>°</span></div>
+      </div>
   </div>`;
-      console.log(box);
       weakBoxe.innerHTML += box;
     });
   });

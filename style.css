@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(169, 168, 168);
+  background-color: rgb(255, 255, 255);
 }
 
 .body {
@@ -21,6 +21,8 @@ body {
   background-color: #e3e3cc55;
   border-radius: 20px;
   display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .sidbar {
@@ -113,7 +115,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
 }
@@ -160,7 +162,6 @@ body {
   width: 50px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .right-nav div span {
@@ -204,10 +205,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .day-box img {
-  width: 30px;
+  width: 50px;
 }
 
 .weather-conditions {
@@ -235,9 +237,9 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
   justify-content: space-between;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .header-box {
@@ -317,10 +319,11 @@ body {
 }
 
 .sunset img {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
-.humidity, .air-quality {
+.humidity,
+.air-quality {
   flex-direction: row;
   justify-content: space-between;
 }
@@ -368,11 +371,12 @@ body {
   background-color: blue;
 }
 
-#visibility, .air-quality .header-box + div{
+#visibility,
+.air-quality .header-box + div {
   font-size: 2.5em;
 }
 
-#visibility + span{
+#visibility + span {
   font-size: 0.9em;
   text-transform: lowercase;
 }
@@ -380,4 +384,22 @@ body {
 .healthy-status {
   display: inline;
   font-size: 0.9em;
+}
+
+.temps {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.temps div {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.temps div:first-child {
+  margin-right: 0.5rem;
+}
+.temps div:last-child {
+  margin-right: 0.5rem;
+  color: grey;
 }
