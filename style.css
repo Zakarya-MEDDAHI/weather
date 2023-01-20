@@ -1,229 +1,266 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins';
-    height: 97vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(169, 168, 168);
 }
 
 .body {
-    height: 650px;
-    width: 1000px;
-    background-color: #E3E3CC55;
-    border-radius: 20px;
-    display: flex;
+  height: 650px;
+  width: 1000px;
+  background-color: #e3e3cc55;
+  border-radius: 20px;
+  display: flex;
 }
 
 .sidbar {
-    width: 250px;
-    height: 100%;
-    padding: 20px 0;
-    background-color: #fff;
-    border-radius: 20px 0 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-transform: capitalize;
+  width: 250px;
+  height: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: capitalize;
 }
 
 .search {
-    position: relative;
+  position: relative;
 }
 
 .search img {
-    width: 12px;
-    position: absolute;
-    top: 7px;
-    left: 5px;
+  width: 12px;
+  position: absolute;
+  top: 7px;
+  left: 5px;
 }
 
 .search input {
-    background-color: #E3E3CC55;
-    padding: 2px 2px 2px 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: none;
+  background-color: #e3e3cc55;
+  padding: 2px 2px 2px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
 }
 
 .search input :focus {
-    outline-color: #E3E3CC;
+  outline-color: #e3e3cc;
 }
 
 .weather {
-    width: 70%;
-    height: min-content;
+  width: 70%;
+  height: min-content;
 }
 
 .weather img {
-    width: 150px;
+  width: 150px;
 }
 
 .degre {
-    width: 70%;
-    padding: 0 0 20px 0;
-    border-bottom: 2px solid rgb(189, 189, 189);
+  width: 70%;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid rgb(189, 189, 189);
 }
 
 .degre h1 {
-    font-size: 90px;
-    font-weight: 50;
-    text-transform: lowercase;
+  font-size: 90px;
+  font-weight: 50;
+  text-transform: lowercase;
 }
 
 .degre h1 span {
-    font-size: 0.5em;
-    position: relative;
-    bottom: 30px;
+  font-size: 0.5em;
+  position: relative;
+  bottom: 30px;
 }
 
 .status {
-    width: 70%;
+  width: 70%;
 }
 
 .status p {
-    font-size: 12px;
-    margin-bottom: 7px;
+  font-size: 12px;
+  margin-bottom: 7px;
 }
 
 .place {
-    position: relative;
+  position: relative;
 }
 
 .place img {
-    height: 75px;
-    width: 200px;
-    border-radius: 20px;
+  height: 75px;
+  width: 200px;
+  border-radius: 20px;
 }
+
+/* i change this */
 
 .place h3 {
-    font-weight: 200;
-    color: #fff;
-    position: absolute;
-    top: 32%;
-    left: 32%;
+  font-weight: 200;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 100%;
+  text-align: center;
 }
 
+/* ---- */
 .right-side {
-    width: calc(3*100%/4);
-    padding: 30px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  text-transform: capitalize;
+  width: calc(3 * 100% / 4);
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nav div .day {
+  color: rgb(136, 135, 135);
+}
+
+.nav div .week {
+  border-bottom: 2px solid black;
 }
 
 .nav div a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: black;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .right-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.right-nav div {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .right-nav div span {
-    background-color: #fff;
+  font-size: 0.7em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-nav div .c {
+  background-color: #000;
+  color: #fff;
+}
+
+.right-nav div .f {
+  background-color: #fff;
 }
 
 .profile {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
 }
 
 .week-boxes {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    column-gap: calc(100%/75);
-    /*padding: 0 40px;*/
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: calc(100% / 75);
+  /*padding: 0 40px;*/
 }
 
 .day-box {
-    height: 100px;
-    background-color: #fff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .day-box img {
-    width: 30px;
+  width: 30px;
 }
 
 .weather-conditions {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .weather-conditions h3 {
-    font-size: 1.1em;
-    font-weight: 400;
-    margin-bottom: 5px;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .todays-boxes {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
 }
 
 .todays-box {
-    height: 180px;
-    background-color: #fff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
-    justify-content: space-between;
-    position: relative;
+  height: 180px;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: space-between;
+  position: relative;
 }
 
 .header-box {
-    color: #E3E3CC;
-    font-size: 1em;
+  color: #e3e3cc;
+  font-size: 1em;
 }
 
 .uv-index .half-circle {
-    width: 170px;
-    height: 170px;
-    border: 10px;
-    border-style: solid;
-    border-color: rgb(189, 189, 189);
-    border-radius: 50%;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 65px;
-    border-left-color: transparent;
-    border-bottom-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(-45deg);
+  width: 170px;
+  height: 170px;
+  border: 10px;
+  border-style: solid;
+  border-color: rgb(189, 189, 189);
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 65px;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
 }
 
 /*.uv-index div div{
@@ -240,9 +277,107 @@ body {
 }*/
 
 .uv-index div span {
-    font-size: 50px;
-    position: relative;
-    bottom: 10px;
-    left: 10px;
-    transform: rotate(45deg);
+  font-size: 50px;
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+  transform: rotate(45deg);
+}
+
+#wind_status {
+  font-size: 2.5em;
+  display: inline;
+}
+
+#wind_status + span {
+  font-size: 1em;
+  text-transform: lowercase;
+}
+
+.sunrise-sunset {
+  padding-bottom: 60px;
+}
+
+.sunrise-sunset div {
+  display: flex;
+  gap: 5px;
+}
+
+.sunrise-sunset div img {
+  box-sizing: content-box;
+  background-color: #ff1;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.sunrise img {
+  transform: rotate(-90deg);
+}
+
+.sunset img {
+    transform: rotate(90deg);
+}
+
+.humidity, .air-quality {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.todays-box .left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#humidity {
+  font-size: 2.5em;
+}
+
+.humidity-degre {
+  position: relative;
+}
+
+#humidity + span {
+  font-size: 1.2em;
+  position: absolute;
+  top: 7px;
+}
+
+.level {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.level div {
+  width: 35px;
+  height: 90px;
+  background-color: rgb(189, 189, 189);
+  border: 2px solid #e3e3cc;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.level div div {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+}
+
+#visibility, .air-quality .header-box + div{
+  font-size: 2.5em;
+}
+
+#visibility + span{
+  font-size: 0.9em;
+  text-transform: lowercase;
+}
+
+.healthy-status {
+  display: inline;
+  font-size: 0.9em;
 }

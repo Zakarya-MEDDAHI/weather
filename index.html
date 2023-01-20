@@ -20,24 +20,28 @@
                 <img src="weather-condition/sunny-rainy.png" alt="">
             </div>
             <div class="degre">
-                <h1>12<span>°c</span></h1>
-                <div>Monday, <span>16:00</span></div>
+                <!-- i change this -->
+                <h1><p style="display:inline" id="degre_number">s</p><span>°c</span></h1>
+                <!-- i change this -->
+                <div id="today_date">Monday, <span>16:00</span></div>
             </div>
+            <!-- i change this -->
             <div class="status">
-                <p>mostly cloudy</p>
-                <p>rain-30%</p>
+                <p id="status_details"></p>
+                <p></p>
             </div>
+            <!-- i change this -->
             <div class="place">
                 <img src="images/mediterranean-2642995.jpg" alt="">
-                <h3>algeria</h3>
+                <h3 id="place"></h3>
             </div>
         </div>
 
         <div class="right-side">
             <div class="nav">
                 <div>
-                    <a href="">today</a>
-                    <a href="">week</a>
+                    <a class="day" href="">today</a>
+                    <a class="week" href="">week</a>
                 </div>
                 <div class="right-nav">
                     <div>
@@ -47,42 +51,10 @@
                     <img class="profile" src="images/field-5236879.jpg" alt="">
                 </div>
             </div>
+            <!-- i change this -->
             <div class="week-boxes">
-                <div class="day-box">
-                    <p>Sun</p>
-                    <img src="weather-condition/sunny.png" alt="">
-                    <div>15<span>°</span></div>
-                </div>
-                <div class="day-box">
-                    <p>Mon</p>
-                    <img src="weather-condition/sunny-rainy.png" alt="">
-                    <div>15<span>°</span></div>
-                </div>
-                <div class="day-box">
-                    <p>Tue</p>
-                    <img src="weather-condition/rainy.png" alt="">
-                    <div>15<span>°</span></div>
-                </div>
-                <div class="day-box">
-                    <p>Wed</p>
-                    <img src="weather-condition/storm.png" alt="">
-                    <div>15<span>°</span></div>
-                </div>
-                <div class="day-box">
-                    <p>Thu</p>
-                    <img src="weather-condition/iced.png" alt="">
-                    <div>15<span>°</span></div>
-                </div>
-                <div class="day-box">
-                    <p>Fri</p>
-                    <img src="weather-condition/cloudy-sunny.png" alt="">
-                    <div>15<span>°</span></div>
-                </div>
-                <div class="day-box">
-                    <p>Sat</p>
-                    <img src="weather-condition/sunny.png" alt="">
-                    <div>15<span>°</span></div>
-                </div>
+                
+             
             </div>
             <div class="weather-conditions">
                 <h3>Today's highlights</h3>
@@ -95,53 +67,62 @@
                     </div>
                     <div class="todays-box wind-status">
                         <h2 class="header-box">wind status</h2>
+                        <!-- i change this -->
                         <div>
-                            <div>7.70<span>km/h</span></div>
+                            <div id="wind_status"></div>
+                            <span>km/h</span>
                         </div>
                         <div>WSW</div>
                     </div>
-                    <div class="todays-box sunrise">
+                    <div class="todays-box sunrise-sunset">
                         <h2 class="header-box">sunrise & sunset</h2>
-                        <div>
-                            <img src="" alt="">
+                        <div class="sunrise">
+                            <img src="images/right-arrow.png" alt="">
+                            <!-- i change this -->
                             <div>
-                                <time>6:35 AM</time>
-                                <time>-1m 46s</time>
+                                <p id="sunrise"></p>
                             </div>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="sunset">
+                            <img src="images/right-arrow.png" alt="">
                             <div>
-                                <time>5:42 AM</time>
-                                <time>+2m 22s</time>
+                                <p id="sunset"></p>
                             </div>
                         </div>
                     </div>
                     <div class="todays-box humidity">
-                        <div>
+                        <div class="left-box">
                             <h2 class="header-box">humidity</h2>
-                            <div>12<span>%</span></div>
+                            <div class="humidity-degre"><p style="display: inline" id="humidity"></p><span>%</span></div>
                             <div>
-                                <div>unhealthy</div>
-                                <img src="" alt="">
+                                <div class="healthy-status">unhealthy <span>&#128078</span></div>
+                            </div>
+                        </div>
+                        <div class="level">
+                            <div>
+                                <div></div>
                             </div>
                         </div>
                     </div>
                     <div class="todays-box visibility">
                         <h2 class="header-box">visibility</h2>
-                        <div>5.2<span>km</span></div>
+                        <!-- i change this -->
+                        <div><p style="display: inline" id="visibility"></p><span> km</span></div>
                         <div>
-                            <div>average</div>
-                            <img src="" alt="">
+                            <div class="healthy-status">average <span>&#128577</span></div>
                         </div>
                     </div>
                     <div class="todays-box air-quality">
-                        <div>
+                        <div class="left-box">
                             <h2 class="header-box">air quality</h2>
                             <div>105</div>
                             <div>
-                                <div>unhealthy</div>
-                                <img src="" alt="">
+                                <div class="healthy-status">healthy <span>&#128077</span></div>
+                            </div>
+                        </div>
+                        <div class="level">
+                            <div>
+                                <div></div>
                             </div>
                         </div>
                     </div>
@@ -150,5 +131,7 @@
         </div>
     </div>
     
+    <!-- js files -->
+    <script type="module" src="./js/renderData.js"></script>
 </body>
 </html>
